@@ -1,0 +1,28 @@
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 352px;
+  margin: 0 auto;
+
+  input {
+    background: #f5f6f7;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    height: 30px;
+    padding: 0 11px;
+    margin-bottom: 8px;
+    font-size: .9rem;
+  }
+
+  button {
+    color: #fff;
+    border: none;
+    background: #0070f2;
+    box-shadow: 0 2px 4px rgb(27 144 255 / 16%), 0 0 2px rgb(27 144 255 / 16%);
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 4px 20px;
+    margin: 16px 0;
+  }
+}

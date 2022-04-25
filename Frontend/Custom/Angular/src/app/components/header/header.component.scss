@@ -1,0 +1,67 @@
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .header .logo .brand {
+    display: none;
+  }
+}
+.header {
+  .links {
+    float: right;
+  }
+  /*display: flex;*/
+  justify-content: space-between;
+  background: #FFFFFF;
+  box-shadow: 0 0 2px #8396a829, 0 4px 8px #8396a829;
+  height: 72px;
+  padding: 0 19px 0 32px;
+  margin-bottom: 50px;
+
+  .logo {
+    cursor: pointer;
+    display: inline-block;
+
+    img {
+      float: left;
+      margin: 22px 0 0;
+      width: 85px;
+      height: 30px;
+    }
+    .brand {
+      float: left;
+      font-size: 30px;
+      margin-top: 18px;
+    }
+  }
+
+  .header-profile-popup-link {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .header-profile-popup {
+    position: absolute;
+    right: 32px;
+    top: 52px;
+    padding: 16px;
+    background: #FFFFFF;
+    border: 1px solid #D5DADD;
+    box-shadow: 0 0 2px #8396a829, 0 2px 4px #8396a829;
+    border-radius: 6px;
+    width: 166px;
+  }
+
+  .header-nav-a {
+    font-size: 16px;
+    line-height: 24px;
+    color: #223548;
+    border-radius: 6px;
+    padding: 7px 20px;
+    margin: 16px 0;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+  }
+}
