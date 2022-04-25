@@ -1,0 +1,60 @@
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+    .header .logo .brand {
+        display: none;
+    }
+}
+.header {
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 0 0 2px rgb(131 150 168 / 16%), 0 4px 8px rgb(131 150 168 / 16%);
+    height: 72px;
+    padding: 0 19px 0 32px;
+    margin-bottom: 50px;
+}
+.header .links {
+    float: right;
+}
+.header .logo {
+    cursor: pointer;
+    display: inline-block;
+}
+.header .logo img {
+    float: left;
+    margin: 22px 0 0;
+    width: 85px;
+    height: 30px;
+}
+.header .logo .brand {
+    float: left;
+    font-size: 30px;
+    margin-top: 18px;
+}
+.header .header-profile-popup-link {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.header .header-profile-popup {
+    position: absolute;
+    right: 32px;
+    top: 52px;
+    padding: 16px;
+    background: #fff;
+    border: 1px solid #d5dadd;
+    box-shadow: 0 0 2px #8396a8 29, 0 2px 4px #8396a8 29;
+    border-radius: 6px;
+    width: 166px;
+}
+.header .header-nav-a {
+    font-size: 16px;
+    line-height: 24px;
+    color: #223548;
+    border-radius: 6px;
+    padding: 7px 20px;
+    margin: 16px 0;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}

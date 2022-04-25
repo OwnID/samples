@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "dgSpecHash": "S2nv2+6jASVixjkg+7SGmx4dZmPxvLzwnUGmSdhufrkVyM+pyJ9ZF4tVY+4MhdXRP3NDHBQyR6z4CD+G9C4l6g==",
+  "success": true,
+  "projectFilePath": "/Users/nivnavick/Documents/Git/ownid-cutom-node/Backend/Custom/C#/CustomCSharpWepApi/CustomCSharpWepApi.csproj",
+  "expectedPackageFiles": [
+    "/Users/nivnavick/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/nivnavick/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/nivnavick/.nuget/packages/swashbuckle.aspnetcore/6.3.0/swashbuckle.aspnetcore.6.3.0.nupkg.sha512",
+    "/Users/nivnavick/.nuget/packages/swashbuckle.aspnetcore.swagger/6.3.0/swashbuckle.aspnetcore.swagger.6.3.0.nupkg.sha512",
+    "/Users/nivnavick/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.3.0/swashbuckle.aspnetcore.swaggergen.6.3.0.nupkg.sha512",
+    "/Users/nivnavick/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.3.0/swashbuckle.aspnetcore.swaggerui.6.3.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "CustomCSharpWepApi depends on Swashbuckle.AspNetCore (>= 6.2.3) but Swashbuckle.AspNetCore 6.2.3 was not found. An approximate best match of Swashbuckle.AspNetCore 6.3.0 was resolved.",
+      "libraryId": "Swashbuckle.AspNetCore",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

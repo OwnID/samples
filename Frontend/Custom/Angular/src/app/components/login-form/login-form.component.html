@@ -1,0 +1,16 @@
+<div class="nav-tabs">
+  <a class="nav-link active">Login</a>
+</div>
+<form [formGroup]="userForm" class="login-form" (ngSubmit)="onSubmit()">
+  <input formControlName="email"  type="email" #email name="email" placeholder="Email" required/>
+  <input formControlName="password" type="password" #password name="password" placeholder="password" required/>
+  <button type="submit">Log In</button>
+  <ownid [type]="login"
+         (onLogin)="onLogin()"
+         [loginIdField]="email"
+         [passwordField]="password">
+  </ownid>
+</form>
+<div class="custom-link">
+<div class="link-text" routerLink="/register">Don't have an account?</div>
+</div>

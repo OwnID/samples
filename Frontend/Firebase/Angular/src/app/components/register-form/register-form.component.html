@@ -1,0 +1,16 @@
+<div class="nav-tabs">
+  <a class="nav-link active">Register</a>
+</div>
+<form [formGroup]="userForm" class="registration-form" (ngSubmit)="onSubmit()">
+  <input formControlName="email"  type="email" #email name="email" placeholder="Email" required/>
+  <input formControlName="password" type="password" #password name="password" placeholder="password" required/>
+  <button type="submit">Register</button>
+  <ownid [type]="register"
+         (onRegister)="onRegister($event)"
+         [loginIdField]="email"
+         [passwordField]="password">
+  </ownid>
+</form>
+<div class="custom-link">
+<div class="link-text" routerLink="/login">Already have an account?</div>
+</div>

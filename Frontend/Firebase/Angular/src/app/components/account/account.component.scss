@@ -1,0 +1,26 @@
+.account-details {
+  display: flex;
+  flex-direction: column;
+  max-width: 352px;
+  margin: 0 auto;
+  background: hsl(240deg 7% 97%);
+  min-height: 100px;
+  text-align: center;
+  border-radius: 4px;
+  .text {
+    margin-top: 40px;
+  }
+  .custom-link {
+    text-align: center;
+    margin-top: 10px;
+    .link-text {
+      color: white;
+      cursor: pointer;
+      display: inline-block;
+      background: #af0b0b;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 8px;
+    }
+  }
+}
