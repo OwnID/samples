@@ -8,13 +8,13 @@ import {toast} from "react-toastify";
 import {getAuth, createUserWithEmailAndPassword} from "firebase/auth";
 
 function RegisterComponent() {
-    const email = useRef(null);
-    const password = useRef(null);
+    const emailField = useRef(null);
+    const passwordField = useRef(null);
     let navigate = useNavigate();
 
     async function onSubmit(event) {
         event.preventDefault();
-        createUserWithEmailAndPassword(getAuth(), email.current.value, password.current.value)
+        createUserWithEmailAndPassword(getAuth(), emailField.current.value, passwordField.current.value)
             .then(async () => {
                 //Enroll device with OwnID
                 await ownidReactService.enrollDevice();
@@ -30,14 +30,14 @@ function RegisterComponent() {
                 <a className="nav-link active">Register</a>
             </div>
             <form onSubmit={onSubmit} className="login-form">
-                <input ref={email} type="email" name="email" placeholder="Email" required/>
-                <input ref={password} type="password" name="password" placeholder="password" required/>
+                <input ref={emailField} type="email" name="email" placeholder="Email" required/>
+                <input ref={passwordField} type="password" name="password" placeholder="password" required/>
                 <button type="submit">Register</button>
                 <OwnID type='register'
                        variant='button-fingerprint'
                        infoTooltip={true}
-                       loginIdField={email}
-                       passwordField={password}
+                       loginIdField={emailField}
+                       passwordField={passwordField}
                        onError={(error) => console.error(error)}/>
             </form>
             <div className="custom-link" onClick={() => navigate('/login')}>

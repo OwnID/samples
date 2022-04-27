@@ -7,13 +7,13 @@ import {toast} from "react-toastify";
 import {signInWithEmailAndPassword, getAuth} from 'firebase/auth';
 
 function LoginForm() {
-    const email = useRef(null);
-    const password = useRef(null);
+    const emailField = useRef(null);
+    const passwordField = useRef(null);
     let navigate = useNavigate();
 
     function onSubmit(event) {
         event.preventDefault();
-        signInWithEmailAndPassword(getAuth(), email.current.value, password.current.value)
+        signInWithEmailAndPassword(getAuth(), emailField.current.value, passwordField.current.value)
             .then(() => navigate('/account'))
             .catch(err => toast.error(err))
     }
@@ -30,14 +30,14 @@ function LoginForm() {
                 <a className="nav-link active">Login</a>
             </div>
             <form className="login-form" onSubmit={onSubmit}>
-                <input ref={email} type="email" name="email" placeholder="Email" required/>
-                <input ref={password} type="password" name="password" placeholder="password" required/>
+                <input ref={emailField} type="email" name="email" placeholder="Email" required/>
+                <input ref={passwordField} type="password" name="password" placeholder="password" required/>
                 <button type="submit">Log In</button>
                 <OwnID type='login'
                        variant='button-fingerprint'
                        infoTooltip={true}
-                       passwordField={password}
-                       loginIdField={email}
+                       passwordField={passwordField}
+                       loginIdField={emailField}
                        onError={(error) => console.error(error)}
                        onLogin={onLogin}/>
             </form>
