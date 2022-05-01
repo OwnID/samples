@@ -7,10 +7,10 @@ public sealed class UserPool
     private static UserPool? instance = null;
     private readonly Dictionary<string?, UserModel> _userPool;
 
-     private UserPool()
-     {
-         _userPool = new Dictionary<string?, UserModel>();
-     }
+    private UserPool()
+    {
+        _userPool = new Dictionary<string?, UserModel>();
+    }
 
     public static UserPool Instance
     {
@@ -32,7 +32,7 @@ public sealed class UserPool
 
     public UserModel Get(UserModel userModelToGet)
     {
-        if (!_userPool.ContainsKey(userModelToGet.LoginId)) return null;
+        if (!_userPool.ContainsKey(userModelToGet.LoginId)) return null!;
         return _userPool[userModelToGet.LoginId];
     }
     
