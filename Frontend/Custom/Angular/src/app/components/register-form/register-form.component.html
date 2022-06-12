@@ -6,6 +6,7 @@
   <input formControlName="password" type="password" #password name="password" placeholder="password" required/>
   <button type="submit">Register</button>
   <ownid [type]="register"
+         [options] = widgetOptions
          (onRegister)="onRegister($event)"
          [loginIdField]="email"
          [passwordField]="password">

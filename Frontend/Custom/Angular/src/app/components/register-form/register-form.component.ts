@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpRequestService} from "../../services/http-request.service";
 import {Router} from "@angular/router";
-import {WidgetType} from "@ownid/angular";
+import {InlineWidgetVariants, WidgetType} from "@ownid/angular";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 
 @Component({
@@ -11,6 +11,7 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 })
 export class RegisterFormComponent implements OnInit {
 
+  widgetOptions = { variant: InlineWidgetVariants.ButtonFingerprint, infoTooltip: true };
   register: WidgetType = WidgetType.Register;
   loginIdField: string | undefined;
   passwordField: string | undefined;

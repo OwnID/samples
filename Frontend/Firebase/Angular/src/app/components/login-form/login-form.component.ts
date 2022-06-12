@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {WidgetType} from "@ownid/angular";
+import {InlineWidgetVariants, WidgetType} from "@ownid/angular";
 import {signInWithEmailAndPassword,getAuth} from "firebase/auth";
 import {Router} from "@angular/router";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
@@ -11,6 +11,7 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 })
 export class LoginFormComponent implements OnInit {
 
+  widgetOptions = { variant: InlineWidgetVariants.ButtonFingerprint, infoTooltip: true };
   login: WidgetType = WidgetType.Login;
   loginIdField: string | undefined;
   passwordField: string | undefined;

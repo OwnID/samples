@@ -6,6 +6,7 @@
   <input formControlName="password" type="password" #password name="password" placeholder="password" required/>
   <button type="submit">Log In</button>
   <ownid [type]="login"
+         [options] = widgetOptions
          (onLogin)="onLogin()"
          [loginIdField]="email"
          [passwordField]="password">

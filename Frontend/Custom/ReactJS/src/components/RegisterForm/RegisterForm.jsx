@@ -49,6 +49,7 @@ function RegisterComponent() {
                 <input ref={passwordField} type="password" name="password" placeholder="password" required/>
                 <button type="submit">Register</button>
                 <OwnID type='register'
+                       options={{ variant: 'button-fingerprint', infoTooltip:true }}
                        loginIdField={emailField}
                        passwordField={passwordField}
                        onError={(error) => console.error(error)}
