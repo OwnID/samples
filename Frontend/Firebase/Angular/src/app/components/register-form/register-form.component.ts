@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {createUserWithEmailAndPassword,getAuth} from 'firebase/auth';
 import {Router} from "@angular/router";
-import { OwnidAngularService, WidgetType } from '@ownid/angular';
+import {InlineWidgetVariants, OwnidAngularService, WidgetType} from '@ownid/angular';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 @Component({
   selector: 'app-register-form',
@@ -10,6 +10,7 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 })
 export class RegisterFormComponent implements OnInit {
 
+  widgetOptions = { variant: InlineWidgetVariants.ButtonFingerprint, infoTooltip: true };
   register: WidgetType = WidgetType.Register;
   loginIdField: string | undefined;
   passwordField: string | undefined;
