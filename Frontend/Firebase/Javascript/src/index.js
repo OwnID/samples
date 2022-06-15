@@ -21,7 +21,7 @@ const firebaseConfig = {
 };
 initializeApp(firebaseConfig);
 ownid('init', {
-    appId: '{app_id}',
+    appId: '{app_id}', // TODO: add your app id here from your OwnID console app (you can use your snippet) https://console.ownid.com/
     firebaseAuth: {getAuth, getIdToken, signInWithCustomToken},
 })
 
