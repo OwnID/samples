@@ -24,7 +24,7 @@ import {HttpClientModule} from "@angular/common/http";
         HttpClientModule,
         BrowserModule,
         AppRoutingModule,
-        OwnidAngularModule.forRoot({appId: '{app_id}'}),
+        OwnidAngularModule.forRoot({appId: '{app_id}'}), // TODO: add your app id here from your OwnID console app (you can use your snippet) https://console.ownid.com/
         FormsModule,
         ReactiveFormsModule,
     ],
