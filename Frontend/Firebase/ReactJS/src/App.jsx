@@ -20,7 +20,7 @@ function App() {
     return (
         <div className="App">
             <OwnIDInit config={{
-                appId: '{appId}', // TODO: add your app id here from your OwnID console app (you can use your snippet) https://console.ownid.com/
+                appId: '{app_id}', // TODO: add your app id here from your OwnID console app (you can use your snippet) https://console.ownid.com/
                 sdk: 'firebase',
                 firebaseAuth: {
                     getAuth,
