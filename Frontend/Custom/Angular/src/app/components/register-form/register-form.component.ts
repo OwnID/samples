@@ -30,8 +30,8 @@ export class RegisterFormComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onRegister(ownIdData: string) {
-    this.ownIDData = ownIdData;
+  onRegister(ownIdData: any) {
+    this.ownIDData = ownIdData.data;
   }
 
   onSubmit() {

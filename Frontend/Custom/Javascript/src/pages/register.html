@@ -40,7 +40,7 @@
         passwordField: document.getElementById("password"),
         loginIdField: document.getElementById("email"),
         onError: (error) => console.log(error),
-        onRegister: (ownIdData) => ownIdDataString = ownIdData,
+        onRegister: (ownIdData) => ownIdDataString = ownIdData.data,
     });
 </script>
 </body>
