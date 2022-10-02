@@ -15,7 +15,7 @@ function RegisterComponent() {
 
     // Stores ownIdData
     function onRegister(ownIdData) {
-        setOwnIDData(ownIdData);
+        setOwnIDData(ownIdData?.data);
     }
 
     function onSubmit(event,userData1) {
