@@ -7,21 +7,15 @@ import {
     signOut
 } from "firebase/auth";
 import {initializeApp} from "firebase/app";
-(function (w, d, s, u, o, e, p) {
-    w[o] = w[o] || function () {
-        return (w[o].q = w[o].q || []).push(arguments), Promise.resolve({error: null, data: null})
-    },
-        e = d.createElement(s), p = d.getElementsByTagName(s)[0];
-    e.src = u;
-    e.async = 1;
-    p.parentNode.insertBefore(e, p)
-})(window, document, 'script', 'https://cdn.ownid.com/js/firebase.sdk.js', 'ownid');
+  ((o,w,n,i,d)=>{o[i]=o[i]||(async(...a)=>((o[i].q=o[i].q||[]).push(a),{error:null,data:null})),
+  (d=w.createElement("script")).src='https://cdn.dev.ownid.com/sdk/'+n,d.async=1,w.head.appendChild(d)})
+  (window,document,'{app_id}','ownid');
+  // TODO: add your app id here from your OwnID console app (you can use your snippet) https://console.ownid.com/
 const firebaseConfig = {
     //Firebase config goes here
 };
 initializeApp(firebaseConfig);
 ownid('init', {
-    appId: '{app_id}', // TODO: add your app id here from your OwnID console app (you can use your snippet) https://console.ownid.com/
     firebaseAuth: {getAuth, getIdToken, signInWithCustomToken},
 })
 
