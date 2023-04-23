@@ -12,7 +12,7 @@ const firebaseConfig = {
 };
 initializeApp(firebaseConfig);
 ((o,w,n,i,d)=>{o[i]=o[i]||(async(...a)=>((o[i].q=o[i].q||[]).push(a),{error:null,data:null})),
-(d=w.createElement("script")).src='https://cdn.dev.ownid.com/sdk/'+n,d.async=1,w.head.appendChild(d)})
+(d=w.createElement("script")).src='https://cdn.ownid.com/sdk/'+n,d.async=1,w.head.appendChild(d)})
 (window,document,'{app_id}','ownid');
   // TODO: add your app id here from your OwnID console app (you can use your snippet) https://console.ownid.com/
 ownid('init', {
