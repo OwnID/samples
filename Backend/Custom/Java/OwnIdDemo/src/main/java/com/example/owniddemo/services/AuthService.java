@@ -35,7 +35,7 @@ public class AuthService {
     public LoggedInResponse login(String email, String password) {
         User user = UserRepository.getInstance().Login(email, password);
         if (user == null) {
-            return new LoggedInResponse(false, "User doesn't exists");
+            return new LoggedInResponse(false, "User doesn't exist");
         }
 
         if (!bCryptPasswordEncoder.matches(password, user.getPassword())) {
