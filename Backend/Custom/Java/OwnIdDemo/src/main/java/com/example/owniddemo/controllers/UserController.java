@@ -64,7 +64,9 @@ public class UserController {
             throw new RuntimeException(e);
         }
     }
-
+    
+    // OPTIONAL: If you need to differentiate browser and mobile sessions - please refer to the sessionType parameter documentation
+    // https://docs.ownid.com/Integrations/custom-integration#post-getsessionbyloginid
     @PostMapping("/getSessionByLoginId")
     public ResponseEntity<OwnIDSessionResponse> getSessionByLoginId(@RequestBody OwnIDSearchRequest req) {
         try {

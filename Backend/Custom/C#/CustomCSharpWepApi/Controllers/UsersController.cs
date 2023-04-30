@@ -58,6 +58,8 @@ public class UsersController : ControllerBase
         }
     }
 
+    // OPTIONAL: If you need to differentiate browser and mobile sessions - please refer to the sessionType parameter documentation
+    // https://docs.ownid.com/Integrations/custom-integration#post-getsessionbyloginid
     [HttpPost("getSessionByLoginId")]
     public async Task<ActionResult<OwnIDSessionResponse>> GetSessionByLoginId(UserModel userModel)
     {
