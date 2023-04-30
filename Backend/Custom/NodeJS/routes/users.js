@@ -48,6 +48,8 @@ router.post('/getOwnIDDataByLoginId', async (req, res) => {
     res.json({ ownIdData: user.ownIdData })
 });
 
+// OPTIONAL: If you need to differentiate browser and mobile sessions - please refer to the sessionType parameter documentation
+// https://docs.ownid.com/Integrations/custom-integration#post-getsessionbyloginid
 router.post('/getSessionByLoginId', async (req, res) => {
     const sign = require('jwt-encode');
     const user = userPool.getUser(req.body.loginId);
