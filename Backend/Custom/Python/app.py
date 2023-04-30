@@ -63,6 +63,8 @@ def set_ownid_data_by_login_id():
     return ('', 204)
 
 
+# OPTIONAL: If you need to differentiate browser and mobile sessions - please refer to the sessionType parameter documentation
+# https://docs.ownid.com/Integrations/custom-integration#post-getsessionbyloginid
 @app.route('/users/getSessionByLoginId', methods=['POST', 'GET'])
 def get_session_by_login_id():
     data = request.get_json()
